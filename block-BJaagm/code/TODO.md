@@ -44,6 +44,10 @@ ans-The Global Execution Context gets created when we load the JavaScript file.
 
 8. Function execution gets created during function execution or while declaring a function.
 
+```js
+ans-function execution
+```
+
 9. Create a execution context diagram of the following code on your notebook. Take a screenshot/photo and store it in the folder named `img`. Use `![](./img/image-name.png)` to display it here.
 
 ```js
@@ -74,7 +78,7 @@ var percentageProfit = getPercentage(400, 200);
 
 <!-- Put your image here -->
 
-![](./img/image-name.jpg)
+![](./img/marks.jpg)
 
 ```js
 var age = 21;
@@ -93,4 +97,4 @@ var whoAmIAgain = customeMessage(12);
 
 <!-- Put your image here -->
 
-![](./img/image-name.jpg)
+![](./img/age.jpg)
