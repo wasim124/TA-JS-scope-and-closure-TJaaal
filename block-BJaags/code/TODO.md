@@ -1,3 +1,4 @@
+
 To create the execution context diagram consider the following:
 
 - Global and Function Execution Context
@@ -14,7 +15,7 @@ function square(num) {
 let hundred = square(10);
 console.log(hundred);
 ```
-
+(../img/square.jpg)
 Create the execution context diagram of the following code line by line.
 
 ```js
