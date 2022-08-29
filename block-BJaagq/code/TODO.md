@@ -5,21 +5,22 @@ Create a execution context diagram of the following code on your notebook. Take 
 1.
 
 ```js
-var species = 'human';
+var species = "human";
 
 function change() {
-  var species = 'vampire';
+  var species = "vampire";
   console.log(species);
 }
 
-console.log(species); // 1
+console.log(species); // 1 human
 change();
-console.log(species); // 2
+
+console.log(species); // 2 human
 ```
 
 <!-- Put your image below -->
 
-![](./img/image-name.jpg)
+![](./img/human.jpg)
 
 - Create the execution context diagram
 - What will be the value of species on 1 and 2
@@ -27,7 +28,7 @@ console.log(species); // 2
 2.
 
 ```js
-var topLevelVar = 'This is global scope!';
+var topLevelVar = "This is global scope!";
 
 function topLevelFn() {
   var localVar = "This is local to topLevelFn's scope";
@@ -55,14 +56,14 @@ topLevelFn();
 3.
 
 ```js
-var one = 'One';
-var two = 'Two';
+var one = "One";
+var two = "Two";
 
 function main() {
-  var three = 'Three';
+  var three = "Three";
 
   function inner() {
-    var four = 'Four';
+    var four = "Four";
 
     console.log(one); // 1
     console.log(two); // 2
