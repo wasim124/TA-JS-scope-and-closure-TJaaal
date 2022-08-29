@@ -4,7 +4,7 @@ Example:
 
 ```js
 function hello() {
-  var username = 'Arya';
+  var username = "Arya";
 }
 console.log(useranme); // useranme is not defined
 ```
@@ -17,77 +17,80 @@ The above code will throw an error `Reference Error username is not defined`.
 
 ```js
 {
-  const username = 'Arya';
+  const username = "Arya";
 }
 console.log(useranme); // useranme is not defined
 ```
-there is no `username` in global scope. that' why code throw an error
+
+there is no `username` in global scope.username define in block and it can't access that' why code throw an error
 
 3. Go through the code below and write down the process of making decision about looking for the variable. Also write the output of the code below.
 
 ```js
 if (true) {
-  let username = 'Arya';
+  let username = "Arya";
 }
-console.log(useranme); // useranme is not defined
+console.log(username); // useranme is not defined
 ```
-there is no `username` in global scope. that' why code throw an error.username defined  inside `if` 
+
+there is no `username` in global scope. that' why code throw an error.username defined inside `if`
 
 4. Go through the code below and write down the process of making decision about looking for the variable. Also write the output of the code below.
 
 ```js
 if (true) {
-  var username = 'Arya';
+  var username = "Arya";
 }
-console.log(useranme); //useranme is not defined
+console.log(username); //arya
 ```
-there is no `username` in global scope. that' why code throw an error.username defined  inside `if` 
+
+there is no `username` in global scope. that' why code throw an error.username defined inside `if`
 
 5. Go through the code below and write down the process of making decision about looking for the variable. Also write the output of the code below.
 
 ```js
-let username = 'John';
+let username = "John";
 if (true) {
-  var username = 'Arya';
+  var username = "Arya";
 }
-console.log(useranme); // username already declared 
+console.log(username); // username already declared
 ```
 
 6. Go through the code below and write down the process of making decision about looking for the variable. Also write the output of the code below.
 
 ```js
-let username = 'John';
+let username = "John";
 if (true) {
-  let username = 'Arya';
+  let username = "Arya";
 }
-console.log(useranme); // username is not defined
+console.log(username); // Jhon
 ```
 
 7. Go through the code below and write down the process of making decision about looking for the variable. Also write the output of the code below.
 
 ```js
-let username = 'John';
+let username = "John";
 function sayHello() {
-  let username = 'Arya';
+  let username = "Arya";
 }
 sayHello();
-console.log(useranme); // username is  not defined 
+console.log(username); // jhon
 ```
 
 8. Go through the code below and write down the process of making decision about looking for the variable. Also write the output of the code below.
 
 ```js
 for (var i = 0; i < 10; i++) {
-  console.log(i, 'First'); // output
+  console.log(i, "First"); // 0 First to 9 first
 }
-console.log(i, 'Second'); // output
+console.log(i, "Second"); // 10 second
 ```
 
 9. Go through the code below and write down the process of making decision about looking for the variable. Also write the output of the code below.
 
 ```js
 for (let i = 0; i < 10; i++) {
-  console.log(i, 'First'); // output
+  console.log(i, "First"); // 0 First to 9 first
 }
-console.log(i, 'Second'); // output
+console.log(i, "Second"); // i is not defined --because it search i outside of loop
 ```
