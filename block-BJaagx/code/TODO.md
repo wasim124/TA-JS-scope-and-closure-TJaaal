@@ -19,6 +19,7 @@ function multiplyBy5(n) {
 let numbersAddedFive = multiplyArrayByN(marks, addFive);
 let numbersMultipliedBy5 = multiplyArrayByN(marks, multiplyBy5);
 ```
+ //  multiplyArrayByN is HOF and addFive or multiplyBy5 is a callback function
 
 2. Create the execution context diagram of the above code snippet
 
