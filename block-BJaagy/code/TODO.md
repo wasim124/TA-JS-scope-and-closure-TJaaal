@@ -1,4 +1,20 @@
 1. Create a function by your choice that accepts a callback function.
+```js
+let num = [15, 45, 55, 85];
+function divideArrayByN(arr, cb) {
+  let finalArr = [];
+  for (let elm of arr) {
+    finalArr.push(cb(elm));
+  }
+  return finalArr;
+}
+
+function divideBy5(n) {
+  return n / 5;
+}
+let numbersDividedBy5 = divideArrayByN(num, divideBy5);
+
+```
 
 2. Create a function by you choice that returns a function reference.
 
