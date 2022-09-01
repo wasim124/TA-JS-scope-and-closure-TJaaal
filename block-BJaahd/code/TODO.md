@@ -67,3 +67,4 @@ counter1.decrement();
 console.log(counter1.value()); // OUTPUT
 console.log(counter2.value()); // OUTPUT
 ```
+(../img/counter.jpg)
