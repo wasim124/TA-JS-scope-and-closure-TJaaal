@@ -39,4 +39,5 @@ function filter() {
 filter(['Sam', 'Jon', 'Arya'], (name) =>
   name.startsWith('S')
 ); // ['Sam']
+
 ```
