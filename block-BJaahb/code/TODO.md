@@ -26,7 +26,7 @@ function getCounter() {
   };
 }
 
-let counter = getCounter();
+let counter =  getCounter();
 
 counter(); // output
 counter(); // output
@@ -43,8 +43,8 @@ function makeColorChanger(color) {
   };
 }
 
-let blue = makeColorChanger('blue');
-let tomato = makeColorChanger('tomato');
+let blue = makeColorChanger("blue");
+let tomato = makeColorChanger("tomato");
 
 blue();
 tomato();
