@@ -322,14 +322,5 @@ function add(a, b) {
   return a + b;
 }
 // Execution Phase
-function test(a) {
-  let num1 = 21;
-  return add(a, num1);
-}
-
 sum = test(100);
-
-function add(a, b) {
-  return a + b;
-}
 ```
